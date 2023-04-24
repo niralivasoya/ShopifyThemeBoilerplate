@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify Custom Theme</title>
+
+    <!-- CSS -->
+    {{ 'app.css' | asset_url | stylesheet_tag }}
+
+    {{ content_for_header }}
+
+  </head>
+  <body>
+
+    <main>
+      {{ content_for_layout }}
+
+      {% section 'header' %}
+    </main>
+
+    <!-- JS  -->
+    {{ 'manifest.js' | asset_url | script_tag }}
+    {{ 'app.js' | asset_url | script_tag }}
+
+  </body>
+</html>
