@@ -1,1 +1,2 @@
-console.log('Hey, this is custom theme!');
+const label = '{{ shop.name }}';
+console.log(label);

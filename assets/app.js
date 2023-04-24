@@ -6,7 +6,8 @@
   \***********************/
 /***/ (() => {
 
-console.log('Hey, this is custom theme!');
+var label = '{{ shop.name }}';
+console.log(label);
 
 /***/ }),
 
